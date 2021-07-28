@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap');
+
+form{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+mat-card{
+    width: 100%;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.texto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.texto {
+    display: flex;
+    margin: 20px;
+}
+
+.surpresa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
