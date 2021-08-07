@@ -8,7 +8,7 @@ import { apiResponse } from '../biscoitoSorteResponse';
   styleUrls: ['./mensage.component.css'],
 })
 export class MensageComponent implements OnInit {
-  conselho: string = '';
+  conselho: string;
   loading: boolean = false;
 
   constructor(private apiBiscoito: BiscoitoSorteService) {}
