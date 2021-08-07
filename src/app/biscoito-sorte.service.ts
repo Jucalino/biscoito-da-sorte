@@ -1,21 +1,17 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
-import { biscoitoSorte } from './biscoitoSorteResponse';
+import { apiResponse } from './biscoitoSorteResponse';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BiscoitoSorteService {
-  private API = `${environment.API}`
+  private API = `${environment.API}/advice`
 
   constructor(private http: HttpClient) { }
 
-  sorte(biscoitoSorte: string){
-    const params = {
-      text: biscoitoSorte
-    }
-
-    return this.http.get<biscoitoSorte>(this.API)
+  buscarConselho(){
+    return this.http.get<apiResponse>(this.API)
   }
 }

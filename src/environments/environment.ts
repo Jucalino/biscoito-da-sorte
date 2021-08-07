@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API: 'https://api.adviceslip.com/advice'
+  API: 'https://api.adviceslip.com'
 };
 
 /*

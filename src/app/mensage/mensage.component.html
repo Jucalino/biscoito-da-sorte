@@ -1,0 +1,25 @@
+<div class="container">
+  <mat-card>
+    <div class="example-button-container">
+      <button
+        mat-fab
+        color="primary"
+        aria-label="Back to home"
+        routerLink=""
+      >
+        <mat-icon>home</mat-icon>
+      </button>
+    </div>
+    <div class="wrapper-conselho" *ngIf="loading == false">
+        <img src="../assets/Fortune-coookie.png" />
+        <div>
+          <h1 *ngIf="conselho">
+            {{ conselho }}
+          </h1>
+        </div>
+    </div>
+    <div class="wrapper-loading" *ngIf="loading">
+        <mat-spinner [diameter]="60"></mat-spinner>
+    </div>
+  </mat-card>
+</div>
