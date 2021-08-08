@@ -13,6 +13,7 @@ import { MensageComponent } from './mensage/mensage.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 const routes: Routes = [
   { path: '', component: BiscoitoComponent},
@@ -28,6 +29,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     MatButtonModule,
+    MatSnackBarModule,
     MatProgressSpinnerModule,
     MatIconModule,
     MatSliderModule,
